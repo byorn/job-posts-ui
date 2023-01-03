@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { useDropzone } from 'react-dropzone';
+import { isMobile } from 'react-device-detect';
 
 const FileUpload = () => {
 
@@ -34,6 +35,8 @@ const FileUpload = () => {
             <br/>
             <br/>
             { JSON.stringify(droppedFile)}
+            <br/>
+            { JSON.stringify(isMobile)}
 
             </div>
 
