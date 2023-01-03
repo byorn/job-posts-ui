@@ -13,7 +13,7 @@ const FileUpload = () => {
     }
 
     const { getRootProps, getInputProps, open } = useDropzone(
-        {   noClick: false, onDrop,
+        {   noClick: true, onDrop,
             accept: {'image/*': ['.jpeg', '.jpg', '.png', '.gif']},
         });
 
